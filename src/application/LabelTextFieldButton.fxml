@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="achor1" prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2" fx:controller="application.LabelTextFieldButtonController">
+   <children>
+      <Label fx:id="lbl1" layoutX="22.0" layoutY="14.0" text="Aynı yöne giden iki aracın t süre sonra arasındaki mesafe nedir ? " />
+      <Label fx:id="lbl2" layoutX="29.0" layoutY="69.0" text="Araç 1 Hız :" />
+      <Label fx:id="lbl22" layoutX="29.0" layoutY="106.0" text="Araç 2 Hız :" />
+      <Label fx:id="lbl23" layoutX="29.0" layoutY="142.0" text="Süre :" />
+      <TextField fx:id="txtHiz1" layoutX="108.0" layoutY="65.0" promptText="Km" />
+      <TextField fx:id="txtHiz2" layoutX="108.0" layoutY="102.0" promptText="Km" />
+      <TextField fx:id="txtZaman" layoutX="108.0" layoutY="138.0" promptText="Saat" />
+      <Button fx:id="btn_Temizle" layoutX="108.0" layoutY="203.0" mnemonicParsing="false" onAction="#btn_Temizle_click" prefHeight="25.0" prefWidth="104.0" text="Temizle" />
+      <Label fx:id="lbl231" layoutX="29.0" layoutY="248.0" text="Aradaki Mesafe : " />
+      <Label fx:id="lbl_Sonuc" layoutX="137.0" layoutY="247.0" text="KM">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Hesapla" layoutX="108.0" layoutY="170.0" mnemonicParsing="false" onAction="#btn_Hesapla_click" prefHeight="25.0" prefWidth="104.0" text="Hesapla" />
+   </children>
+</AnchorPane>

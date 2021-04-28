@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ComboListViewChoiceController">
+   <children>
+      <TabPane layoutX="44.0" prefHeight="300.0" prefWidth="328.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Tab1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtDeger" layoutX="80.0" layoutY="12.0" promptText="Değer" />
+                        <ComboBox fx:id="combo1" layoutX="80.0" layoutY="47.0" onAction="#combo1_click" prefWidth="150.0" />
+                        <Label layoutX="10.0" layoutY="51.0" text="ComboBox" />
+                        <Label layoutX="10.0" layoutY="89.0" text="ChoiceBox" />
+                        <ChoiceBox fx:id="choice" layoutX="80.0" layoutY="85.0" onDragDetected="#choice_click" prefWidth="150.0" />
+                        <Label layoutX="10.0" layoutY="130.0" text="ListView" />
+                        <ListView fx:id="lstView" layoutX="80.0" layoutY="130.0" prefHeight="102.0" prefWidth="200.0" />
+                        <Button fx:id="btn" layoutX="254.0" layoutY="12.0" mnemonicParsing="false" onAction="#btn_click" text="Button" />
+                        <Button fx:id="btn_getir" layoutX="6.0" layoutY="245.0" mnemonicParsing="false" onAction="#btn_getir_click" text="Getir" />
+                        <Label fx:id="lbl_getir" layoutX="80.0" layoutY="249.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
